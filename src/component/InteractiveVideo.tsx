@@ -78,7 +78,9 @@ const InteractiveVideoComponent = function (
       )}
       <video
         ref={playerRef}
-        className={" z-0 " + videoClassName + (paused && videoPausedClassName)}
+        className={
+          " z-0 " + videoClassName + " " + (paused && videoPausedClassName)
+        }
         src={src}
         controls
         onPlay={onPlay}
